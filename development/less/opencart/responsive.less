@@ -1,0 +1,154 @@
+/******************************************************
+ * @package Pav Opencart Theme Framework for Opencart 1.5.x
+ * @version 1.1
+ * @author http://www.pavothemes.com
+ * @copyright	Copyright (C) Augus 2013 PavoThemes.com <@emai:pavothemes@gmail.com>.All rights reserved.
+ * @license		GNU General Public License version 2
+*******************************************************/
+
+/*@media only screen and (min-width: 992px) and (max-width: 1199px){*/
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+    .product-block .price {
+        margin-bottom: 10px;
+    }    
+}
+@media (max-width: @screen-md-max){
+   .product-info .product-action > div {
+        margin: 8px;
+    }
+}
+@media (max-width: @screen-sm-max) {
+    .product-zoom, .zoomContainer, .quickview {
+        display: none!important;
+    }
+    .language button, .currency button {
+        width: auto;
+    }
+    .producttabs .product-block {
+        margin-bottom: 20px;
+    }
+    .pav-categoryproducts {
+        .box-content {
+            background: #fff;
+        }
+        .tab-nav,.tab-content {
+            width: 100%;
+            float: none!important;
+            clear: both;
+        }
+        .h-tabs {
+            li {
+                float: left;
+            }
+            a {
+                margin: 0px 3px 20px;
+                padding: 8px 10px;
+            }
+        }
+        .carousel-control {
+            top: 0;
+        }
+    }
+    .pav-newsletter{
+        padding: 0;
+        .inner {
+                &:before, &:after {
+                content: none;
+            }
+        }
+        &:before, &:after {
+            content: none;
+        }
+        .newsletter_block {
+            margin-top: 15px;
+        }
+    }
+}
+
+/*@media only screen and (min-width: 769px) and (max-width: 992px) {*/
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {    
+    .pavtestimonial .testimonial {
+        width: 58%;
+    }
+}
+/*@media only screen and (max-width: 768px) {*/
+@media only screen and (max-width: @screen-xs-max) { 
+    .filter-right {
+        margin-top: 15px;
+    }
+}
+/*@media (max-width: 480px){*/
+@media (max-width: @screen-phone) {
+    .sidebar-offcanvas {
+        width: 60%;
+    }
+    .row-offcanvas-right
+      .sidebar-offcanvas {
+        right: -60%; /* 6 columns */
+      }
+
+      .row-offcanvas-left
+      .sidebar-offcanvas {
+        left: -60%; /* 6 columns */
+      }
+
+      .row-offcanvas-right.active {
+        right: 60%; /* 6 columns */
+      }
+
+      .row-offcanvas-left.active {
+        left: 60%; /* 6 columns */
+      }
+    .header-right {
+        width: 65%;
+        ul.links li {
+            margin-right: 8px;
+        }
+    }
+    .header-left {
+        width: 35%;
+    }
+    .currency, .language {
+        .text-label {
+            display: none;
+        }
+    }
+    .header-main .column {
+        display: block !important;
+        height: auto;
+        width: 100%;
+        > div {
+            margin: 10px 0;
+            text-align: center;
+        }
+    }
+    .display {
+        > div {
+            margin: 10px 5px 0!important;
+        }
+    }
+    .pavtestimonial{
+        .testimonial {
+            width: 100%;
+        }
+        .avatar-profile {
+            padding: 0;
+        }   
+    } 
+    .htabs ul > li > a {
+        margin-bottom: 12px;
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    .newsletter_block {
+        .input-group {
+            clear: both;
+            margin: 0 10px;
+        }
+    }
+    .product-list .product-block .image {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+}

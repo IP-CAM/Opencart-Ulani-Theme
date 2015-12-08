@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+	
+	<footer>
+		 <title>Footer Block</title>
+		 <description></description>
+		 <module>
+	 	 	<title>Paypal</title>
+	 	 	<field>
+	 	 		<name>widget_paypal</name>
+	 	 		<label>Paypal</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default> <![CDATA[ 
+					<img alt="img" src="image/catalog/paypal.png">
+	 	 			 ]]> </default>
+	 		</field>
+	 	</module>
+	 	<module>
+	 	 	<title>Stores</title>
+	 	 	<field>
+	 	 		<name>widget_shopmap</name>
+	 	 		<label>Shopmap</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default> <![CDATA[ 
+	 	 			<div class="box">
+						<div class="box-heading"><span>Shop Map</span></div>
+						<div class="content">
+							<img alt="shopmap" src="image/catalog/demo/banners/shopmap.jpg">
+						</div>
+					</div>
+	 	 		]]> </default>
+	 		</field>
+	 	</module>
+	 	
+	</footer>
+</theme>

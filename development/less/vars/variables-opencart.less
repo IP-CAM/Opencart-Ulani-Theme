@@ -1,0 +1,159 @@
+// Global values
+// --------------------------------------------------
+
+// Variables
+// --------------------------------------------------
+@image-theme-path-base:'../../image/';
+@image-theme-path : '../../image/default/';
+@font-path-base: '../fonts/';
+// themes colors
+// -------------------------
+@brown:					#b39770;
+@browndark: 			#e4dcd2;
+@lightbrown:			#f6eee3;	
+@blue:                  #049cdb;
+@bluedark:              #0064cd;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+@white :			 	#FFFFFF;
+@black :				#000000;
+@cyandark:   			#98804d;
+
+@green:                 #7db641;
+@red:                   #c83a3a;
+
+
+
+@theme-color-default   : #695430; // using for default color of all pages such as background color for top menu, block header
+@theme-color-primary   : #574629; // using for default color of all pages such as background color for , block , and other
+@theme-color-secondary : #514531 ;  // for hightligh block header, button as default it is  color
+@theme-color-threedary : #EFE5D9 ;  // for hightligh block header, button as default it is  color
+
+
+@theme-color 			: #6f9426;
+@theme-color-hover      : @theme-color-secondary;
+@theme-border-color     : lighten(@theme-color-default, 82%);
+
+@link-color:            #868686;
+@link-hover-color:      @theme-color;
+@border-color:           #e5e2dd;
+@line-height-computed:   24px;
+@theme-padding           : @line-height-computed - 2;
+@theme-margin            : @line-height-computed - 2;
+
+@btn-theme-primary       : @theme-color-secondary;
+@btn-theme-primary-hover : @theme-color-default ;
+
+@text-primary-theme : @theme-color;
+@text-danger-theme : @theme-color-secondary;
+
+
+/**
+ * Heading Page
+ */
+@heading-border            :  2px solid @theme-color-primary;
+@heading-hightlight-border :  2px solid @theme-color-default;
+
+
+
+/* 
+ * product block
+ */
+@product-margin                     : 20px ;
+@product-padding                    : @theme-margin - 5;
+@product-lineheight                 : 23px;
+@product-link-color  		        : @theme-color-secondary; 
+@product-name-font-size		        : 12px;
+@product-name-color  		        : @theme-color-secondary;
+@product-price-old-color 			: #6E6F70;
+@product-price-color				: #df5e44;
+@product-price-tax                  : #bbb;
+@product-action-link-color          : @white;
+@product-action-bg  		        : lighten(@theme-color-default, 70%);
+@product-action-hover-bg 	        :@theme-color-secondary;
+@product-boder-color                : @theme-border-color;
+@product-label-special-color        : @theme-color-secondary;
+
+
+/* buttons */
+@btn-wrap-border:   #CCC ;
+@btn-wrap-bg    : @white; 
+
+/* 
+ * htab module 
+ */
+@htab-border-color 	     : @nav-tabs-border-color; 
+@htab-border 		     : @nav-tabs-border-color; 
+@htab-nav-padding	     : 8px 20px;
+@htab-nav-color		     : @white;
+@htab-bg    		     : @theme-color-primary;
+@htab-bg-selected     	 : @theme-color;
+@htab-nav-selected-color : @white;
+/* 
+ * Mega Menu Module
+ */
+@megamenu-bg: #000; 
+@megamenu-border-color:#999;
+/* 
+ * Box Modules 
+ */
+@box-module-margin	         : @line-height-computed;
+@box-module-heading-border   : @gray-lighter;
+@box-module-heading-bg		 : @brown;
+@box-module-heading-padding  : 10px 20px;
+@box-module-heading-font     : @font-family-second;
+@box-module-heading-color    : #fff;
+@box-module-heading-fontsize : 16px;
+@box-module-border-color     : @white;
+@box-module-content-bg       : #eee;
+@box-module-content-padding  : @box-module-margin;
+@box-module-badge            : @theme-color;
+@box-module-text-light       : @theme-color-default;
+ /* 
+  * LAYOUTS VAIRABLES 
+  */
+//sidebar
+
+@sidebar-heading-color:  #fff;
+// topbar  
+@topbar-bg				: @browndark; 
+@topbar-color			: @theme-color-primary;
+@topbar-font-size  		: @font-size-base;
+@topbar-link-color      : @topbar-color;
+@topbar-link-hover-color: @theme-color;
+
+//header-main
+@header-main-bg				: @lightbrown; 
+@header-main-padding        : auto;
+@header-main-height 		: 115px;
+
+//Pav-mainnav
+@mainnav-bg				: @lightbrown; 
+@mainnav-wrap-bg		: @brown;
+
+//Offcanvas
+@offcanvas-bg           : @theme-color;
+
+// footer position
+@footer-bg 				    : #483B2B;
+@footer-color 				: #fff;
+@footer-heading-font-size   : 16px;
+@footer-heading-color		: lighten(@theme-color-default , 20%);
+@footer-heading-boder-color : 2px solid transparent;
+@footer-link-color          : #908d89;
+@footer-link-hover-color    : @white;
+@footer-padding             : @line-height-computed + 8;
+@footer-margin              : @line-height-computed + 13;
+//footer-top
+@footertop-bg 			: #f8f8f8;
+@footertop-link         : lighten(@theme-color-default, 49%);
+
+// powered by
+@power-bg              : #201a10;
+@power-text-color      : #b4b7b8;
+@power-link-color      : @theme-color;
+@power-link-color-hover: #fff;
+@power-padding         : 30px;
+@power-margin          : @footer-margin;

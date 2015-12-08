@@ -1,0 +1,182 @@
+/******************************************************
+ * @package Pav Opencart Theme Framework for Opencart 1.5.x
+ * @version 1.1
+ * @author http://www.pavothemes.com
+ * @copyright	Copyright (C) Augus 2013 PavoThemes.com <@emai:pavothemes@gmail.com>.All rights reserved.
+ * @license		GNU General Public License version 2
+*******************************************************/
+
+.hide-bar{
+    margin-top: -40px;
+    transition: all 1s ease 0s;
+}
+.page-home  #content,
+.page-common-home #content, #sidebar-main{
+ // overflow: hidden;
+}
+body{  
+    &.layout-boxed-md{
+        background: url("@{image-theme-path-base}pattern/pattern2.png");
+        #page{  max-width: @container-desktop; .box-shadow(0 0 5px #888);background-color: #F9F8F4;margin: 0 auto; }
+    }
+    &.layout-boxed-lg{
+        background: url("@{image-theme-path-base}pattern/pattern2.png");
+        #page{  max-width: @container-lg-desktop; .box-shadow(0 0 5px #888); background-color: #F9F8F4;margin: 0 auto; }
+
+    }
+    &.fullwidth{ }
+    
+ }   
+/*
+ * HEADER 
+ */
+
+#topbar {
+  border-bottom: 1px solid #d6d6d6;
+  background: #f1f2f4;
+  .links a, .text-label {
+    font-style: italic;
+  }
+  .links li, .links a {
+    line-height: 38px;
+  }
+}
+/* header */
+#header {  
+  z-index: 5;
+  padding-top: 15px;
+  position:  relative;
+}
+
+.header-main{
+  background: url("@{image-theme-path-base}bg_header_bottom.png") repeat-x 0 0;
+  padding-top: 5px;  
+  .inner {
+    background: @theme-color;
+  }
+  .column {
+    height: 85px;
+  }
+}
+
+/*
+ * SLIDESHOW 
+ */
+#pav-slideshow {}
+
+/*
+ * SHOWCASE 
+ */
+#pav-showcase {}
+
+/*
+ * PROMOTION TOP 
+ */
+#pav-promotion {}
+/*
+ * MAIN CONTENT
+ */  
+.common-home #sidebar-main{
+   // padding: 0 10px;
+} 
+#sidebar-main{
+    //padding: 0 20px 20px;
+}
+
+.sidebar  [class*="col-"] {
+    width: 100%
+}
+/*
+ * CONTENT BOTTOM
+ */
+
+/*mass-bottom */
+
+
+/* FOOTER s*/
+ 
+
+#footer {
+    .clearfix();
+    .box { 
+      background: transparent;
+      margin-bottom: 0;
+      .box-heading{
+        padding-left: 0;
+        background: transparent;
+        margin-bottom: 25px;
+        font-weight: 400;
+      }
+      .box-content{
+          padding: 0;
+      }
+    } 
+    ul.list {
+      li {
+        padding-bottom: 10px;
+        &:hover {
+          a {
+            color:@footer-link-hover-color;
+          }
+        }
+      }
+      a {
+        color: @footer-link-color;
+        font-style: italic;          
+      }
+      .fa {
+        font-size: 8px;
+        margin-right: 5px;        
+      }
+      &.list-style {
+        .fa {
+          background: #A59F96;
+          color: @footer-bg;
+          text-align: center;
+          line-height: 20px;
+          .size(20px,20px);
+          .rounded-corners(50%);
+        }
+      }
+    }
+    .footer-top{
+      margin-bottom: -37px;
+    }
+    .footer-center{
+      background: url("@{image-theme-path-base}bg_footer_center.png") repeat 0 0;
+      .inner {
+        padding: 60px 0 20px;
+      }
+      
+    }
+    .footer-bottom{
+      background: @footer-bg;
+      color: @footer-color;
+      font-size: 12px;
+      .inner {
+        border-top: 1px solid #52422f;
+        padding: 20px 0 10px;
+      }
+      .img {
+        background: none repeat scroll 0 0 #D1C7BD;
+        margin-right: 8px;
+        padding: 6px;
+        .rounded-corners(5px);
+      }           
+    }    
+}
+
+/* POWER BY */
+#powered {
+    clear: both;
+    background: @power-bg;
+    padding: @power-padding 0; 
+    color: @power-text-color ;
+    a {
+        color: @power-link-color;
+        &:hover {
+            color: @power-link-color-hover;
+        }
+    }
+}
+

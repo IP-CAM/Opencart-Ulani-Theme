@@ -1,0 +1,361 @@
+/* zoom function in product page */
+.rtl .zoomContainer .zoomWindow {
+  right: 100% !important;
+  left: auto!important;
+}
+.canvas-menu {
+  left: auto;
+  right: 0;
+}
+/*topbar*/
+ul.links li {
+  margin-right: 0;
+}
+ul.links li > a .fa {
+  margin-left: 5px;
+  margin-right: 0;
+}
+.language button,
+.currency button {
+  padding: 2px 10px 2px 0px;
+  text-align: right;
+}
+/*header main*/
+.icon-shopping-cart,
+.icon-truck {
+  margin-right: 0;
+  margin-left: 8px;
+}
+#cart .dropdown-menu {
+  left: 0;
+  right: auto;
+}
+#cart .dropdown-menu:before {
+  right: auto;
+  left: 15%;
+}
+/*menu*/
+#pav-mainnav .navbar ul.nav > li:first-child {
+  background-position: right center;
+  padding-left: 0;
+  padding-right: 15px;
+}
+#pav-mainnav .dropdown-menu li a:before {
+  right: 0;
+  left: auto;
+}
+.pav-megamenu ul.megamenu > li.aligned-fullwidth .dropdown-submenu .dropdown-menu {
+  right: 100%;
+}
+.pav-megamenu ul.megamenu > li.aligned-right .dropdown-menu {
+  right: auto;
+  left: 0;
+}
+.pav-megamenu ul.megamenu > li.aligned-right .dropdown-submenu .dropdown-menu {
+  margin-right: 0;
+  margin-left: 100%;
+}
+.pav-megamenu ul.megamenu > li.aligned-left .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+.pav-megamenu ul.megamenu > li.aligned-left .dropdown-submenu .dropdown-menu {
+  margin-left: 0;
+  margin-right: 100%;
+}
+.pav-megamenu ul.megamenu > li.aligned-center .dropdown-menu {
+  left: auto;
+  right: 50%;
+  transform: translate(50%);
+}
+.pav-megamenu ul.megamenu > li.aligned-center .dropdown-submenu .dropdown-menu {
+  margin-left: 0;
+  margin-right: 100%;
+}
+.pav-megamenu .product-block .image {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+.pav-megamenu .product-block .product-meta {
+  text-align: right!important;
+}
+/*    LAYOUT
+  */
+.header-right {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+.header-left {
+  padding-right: 0px;
+  padding-left: 10px;
+}
+.navbar-header {
+  float: right;
+}
+.navbar-nav > li {
+  float: right;
+}
+/*footer*/
+#footer .box .box-heading {
+  padding-right: 0;
+  text-align: right;
+}
+#footer ul.list .fa {
+  margin-right: 0;
+  margin-left: 5px;
+}
+#footer .footer-bottom .img {
+  margin-left: 8px;
+  margin-right: 0;
+}
+/*
+  * BOX
+*/
+.box.special .box-heading span:before {
+  left: auto;
+  right: 0;
+  border-right: none;
+  border-left: 11px solid transparent;
+}
+.sidebar .box .box-heading {
+  text-align: right;
+}
+.sidebar .box .box-heading:before {
+  left: auto;
+  right: 0;
+  border-right: none;
+  border-left: 11px solid transparent;
+}
+.sidebar .product-block .image {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+.sidebar .product-block .product-meta {
+  text-align: right!important;
+}
+/*
+  *     blog
+  */
+.box-category > li > a,
+.box-category ul > li > a {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.box-category > li > a:before,
+.box-category ul > li > a:before {
+  right: 0;
+  left: auto;
+}
+.box-category > li ul > li,
+.box-category ul > li ul > li {
+  padding: 10px 25px 0 0;
+}
+.head {
+  float: left;
+}
+/*
+  *   MODULE
+  */
+.pavtestimonial .testimonial {
+  padding: 0 75px 0 40px;
+}
+.pavtestimonial .testimonial:before {
+  left: auto;
+  right: 0;
+}
+.pavtestimonial .testimonial:after {
+  right: auto;
+  left: 0;
+}
+.productcarousel .product-block .image {
+  float: right;
+  margin-right: 0;
+  margin-left: 20px;
+}
+.pavcarousel .carousel-control.right,
+.pavtestimonial .carousel-control.right {
+  right: 0;
+}
+.pav-categoryproducts .tab-content {
+  padding-right: 20px;
+  padding-left: 0;
+}
+.pav-categoryproducts .product-block {
+  border-width: 1px 0 0 1px;
+}
+.pav-categoryproducts .carousel-control {
+  left: auto;
+  right: 0;
+}
+.pav-categoryproducts .carousel-control.left {
+  right: 38px;
+}
+.pav-categoryproducts .carousel-control.right {
+  left: auto;
+}
+.product-label-special {
+  right: auto;
+  left: 3px;
+}
+.pav-header .rss-wrapper {
+  right: auto!important;
+  left: 0!important;
+}
+.pav-blog .blog-meta > span,
+.blog-social .social-wrap > div {
+  float: right!important;
+}
+.blog-social .social-heading {
+  padding-right: 0!important;
+}
+.pavblogs-comments-box img {
+  padding-left: 12px!important;
+}
+.comment-item img {
+  float: right!important;
+  padding-left: 12px!important;
+  padding-right: 0!important;
+}
+#comment-form label {
+  float: right!important;
+}
+.product-info .share a {
+  float: right;
+}
+.carousel-control {
+  right: auto;
+  left: 0;
+}
+.carousel-control.left {
+  right: auto;
+}
+.carousel-control.right {
+  left: 38px;
+}
+.product-info .carousel-control.right {
+  right: 0;
+  left: auto;
+}
+/*
+.product-info .carousel-control.right {
+    right: 0;
+    left: auto;
+}
+.carousel-controls {
+	right: auto;
+	left: 0;
+}
+.carousel-control {
+ 	right: 0;
+ 	left: auto;
+ }
+.carousel-control.left {
+    left: 0;
+    right: auto;
+}
+.carousel-controls .carousel-control.left {
+  left: 0;
+}*/
+.product-info .quantity-adder input {
+  margin-left: 2px;
+}
+.product-filter .display {
+  margin-right: 0;
+  margin-left: 21px;
+}
+.product-filter .limit,
+.product-filter .sort {
+  margin-right: 21px;
+  margin-left: 0;
+}
+.product-list .product-block .image {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+.product-list .product-block .product-meta {
+  text-align: right !important;
+}
+.currency .dropdown-menu li:hover,
+.language .dropdown-menu li:hover,
+.acount-mini .dropdown-menu li:hover {
+  padding-left: 0;
+  padding-right: 5px;
+}
+.currency .dropdown-menu li a img,
+.language .dropdown-menu li a img,
+.acount-mini .dropdown-menu li a img {
+  float: right;
+}
+.htabs ul > li > a,
+.htabs a {
+  float: right;
+}
+#search {
+  margin-right: 0;
+  margin-left: 20px;
+}
+#search input {
+  padding-right: 10px;
+  padding-left: 30px;
+}
+#search input,
+#search .button-search {
+  right: auto;
+  left: 0;
+}
+.blog-item img {
+  margin: 0 0px 20px 20px!important;
+}
+.iconbox {
+  float: right;
+  margin-right: 0px;
+  margin-left: 8px;
+}
+.iconbox i {
+  padding-left: 0;
+  padding-right: 5px;
+}
+.social li {
+  float: right;
+}
+.form-group {
+  margin-left: 6px;
+  margin-right: 0px !important;
+}
+.pav-custom .support-id .image {
+  margin-left: 10px;
+  margin-right: 0px;
+}
+.product-block .product-hover .compare a,
+.product-block .product-hover .wishlist a {
+  float: left;
+  margin-right: 2px;
+}
+.addtocart {
+  margin-left: 20px;
+  margin-right: 0;
+  background-position: right -35px;
+  padding-right: 45px;
+  padding-left: 15px;
+}
+.addtocart:hover {
+  background-position: right 0px;
+}
+.product-block .product_quickview a span {
+  margin-right: 0;
+  margin-left: 6px;
+}
+.box-module-pavreassurances .icon-name {
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+}
+.populartags a {
+  float: right;
+}
+.fa.pull-left {
+  margin-left: 0.3em;
+}

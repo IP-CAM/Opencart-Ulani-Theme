@@ -1,0 +1,125 @@
+/******************************************************
+ * @package Pav Opencart Theme Framework for Opencart 1.5.x
+ * @version 1.1
+ * @author http://www.pavothemes.com
+ * @copyright	Copyright (C) Augus 2013 PavoThemes.com <@emai:pavothemes@gmail.com>.All rights reserved.
+ * @license		GNU General Public License version 2
+*******************************************************/
+// Center-align a block level element
+ 
+
+/* box */
+
+.box {
+    margin-bottom: @box-module-margin;
+    position: relative;
+    background: #fff;
+    .box-heading {
+        padding: @box-module-heading-padding;
+        font-weight: 400;
+        font-size: @box-module-heading-fontsize;
+        color: @box-module-heading-color;
+        text-transform: uppercase;
+    }
+    .box-content {
+        padding: @box-module-content-padding;
+    }
+    &.special {
+        background: transparent;
+        .box-heading {              
+            color: #fff; 
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 0;
+            span {
+                background: @theme-color;
+                padding: @box-module-heading-padding;
+                display: inline-block;
+                position: relative;
+                &:before {
+                    border-right: 11px solid transparent;
+                    border-top: 11px solid @theme-color;
+                    bottom: -11px;
+                    content: "";
+                    display: inline-block;
+                    zoom: 1;
+                    left: 0;
+                    position: absolute;
+                    .size(0,0);
+                }  
+            }                  
+        }   
+    }
+    &.hightlights{
+        border: 1px solid @border-color;
+        padding: 20px;
+        .box-heading {
+            color: #5f5e5e;
+            text-transform: uppercase;
+            padding: 0;
+        }
+        .box-content {
+            padding: 0;
+        }
+    }
+    &.box-normal {
+        .box-heading {
+            background-color: #f2f0ed;
+            padding: 0;
+            span {
+                background: @theme-color;
+                padding: 6px 20px;
+                display: inline-block;
+            }
+        }
+        .box-content {
+            border: 1px solid @border-color;
+            padding: 30px;
+            border-top: none;
+        }
+        &.dark-orange {
+            .box-heading span {
+                background: #574629;
+            }
+        }
+        &.soft-red {
+            .box-heading span {
+                background: #df5e44;
+            }
+        }
+    }
+    &.nopadding {
+        .box-content {
+            padding: 0;
+        }
+    }
+    
+}
+
+.sidebar {
+    position: relative;
+    .box {
+        background: transparent;
+        .box-heading {
+            background: @theme-color-primary;
+            color: @sidebar-heading-color;
+            font-weight: 700;
+            position: relative;
+            margin-bottom: 12px;
+            &:before {
+                border-right: 11px solid transparent;
+                border-top: 11px solid @theme-color-primary;
+                bottom: -11px;
+                content: "";
+                display: inline-block;
+                zoom: 1;
+                left: 0;
+                position: absolute;
+                .size(0,0);
+            }
+        }
+        .box-content {
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,316 @@
+
+/******************************************************
+ * @package Pav Opencart Theme Framework for Opencart 1.5.x
+ * @version 1.1
+ * @author http://www.pavothemes.com
+ * @copyright	Copyright (C) Augus 2013 PavoThemes.com <@emai:pavothemes@gmail.com>.All rights reserved.
+ * @license		GNU General Public License version 2
+*******************************************************/
+
+#pav-mainnav { 
+	position: relative;
+    background: #fff;
+    .inner-bg {
+        background: url("@{image-theme-path}bg-menu.png") repeat left top scroll @theme-color-primary;
+        height: 42px;
+        padding: 3px;
+    }
+    .inner {
+        border: 1px solid #887052;       
+    }
+	.dropdown{
+		&:hover > .dropdown-menu{
+			display: block;
+		}
+	}
+	.navbar {
+		border: none;
+        min-height: 0;
+		.navbar-collapse {
+			 padding-left: 0;
+			 padding-right: 0;
+		}
+		ul.nav{
+			&  > li {
+                border-top: 4px solid transparent;
+                &:first-child {
+                    background: url("@{image-theme-path-base}icon-home.png") no-repeat left center;
+                    padding-left: 15px;
+                }
+                &:hover{
+                    border-top: 4px solid @theme-color;
+                    .caret{
+                        border-bottom-color: @theme-color;
+                        border-top-color: @theme-color;
+                    }
+                    > a {               
+                        color: @theme-color;
+                    }
+                    &.parent {
+                        > a {
+                            &:before, &:after {
+                                z-index: 1010;
+                                bottom: -3px;
+                                left: 50%;
+                                border: 4px solid transparent;
+                                content: " ";
+                                position: absolute;
+                                pointer-events: none;
+                                .size(0,0);
+                            }
+                            &:after {
+                                border-color: transparent;
+                                border-bottom-color: #fffcf7;
+                                border-width: 9px;
+                                margin-left: -9px;
+                            }
+                            &:before {
+                                border-color: transparent;
+                                border-bottom-color: @theme-color;
+                                border-width: 13px;
+                                margin-left: -13px;
+                            }
+                        }
+                    }
+                }
+            }            
+		 	& > li  > a {
+				font-size:15px;
+                padding: 19px 15px;
+                text-transform: uppercase;
+                color: #5f5e5e;
+		 	}
+		}
+	 }	
+	.dropdown-menu {
+        padding: 20px;
+        border: 3px solid @theme-color;
+        .rounded-corners (0);
+        li{
+            a{
+                color: #7b7771;
+                padding: 0 15px;
+                line-height: 28px;
+                position: relative;
+                &:before {
+                    position: absolute;
+                    top: 12px;
+                    left: 0;
+                    font-size: 8px;
+                    display: inline-block;
+                    font-family: FontAwesome;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    content: "\f061";
+                }
+                &:hover {
+                    color: @theme-color;
+                }
+            }
+        }
+    }
+	
+    .mini-access{
+        line-height: 30px;
+        text-align: center;
+        a{
+            padding: 0px 5px;
+            border-right: 1px solid @gray;
+            &:last-child{
+                border-right: none;
+            }
+        }
+    }
+}
+.navbar-nav {
+    .dropdown-menu {
+        border: none;
+        display: inline-block;
+        .opacity(0);
+        top: 50px;
+        visibility: hidden;
+        min-width: 160px;
+        .row {
+          margin-bottom: 0 !important;
+        }
+        &:hover {
+          >  .dropdown-menu {
+
+          }
+        }
+    }
+    .dropdown {
+        &:hover {
+          > .dropdown-menu {
+            .opacity(1);
+            top: 100%;
+            visibility: inherit;
+            background: #fffcf7;
+          }
+        }
+        .dropdown-submenu {
+            &:hover {
+                .dropdown-menu {
+                    top: 50%;
+                    .opacity(1);
+                    visibility: inherit;
+                }
+            }
+        }
+    }
+}
+
+.pav-megamenu {
+	ul.megamenu {
+        > li {
+            &.aligned-fullwidth {
+                position: static;
+                > .dropdown-menu  {
+                    width: 100%!important;
+                }
+                .dropdown-submenu .dropdown-menu {
+                    margin-left: 0;
+                }
+            }
+            &.aligned-right {
+                .dropdown-menu  {
+                    right:0;
+                    left:auto;
+                }
+                .dropdown-submenu .dropdown-menu {
+                    margin-right: 100%;
+                }
+            }
+            &.aligned-left {
+                .dropdown-menu  {                   
+                    right:auto;
+                    left:0;
+                }
+                .dropdown-submenu .dropdown-menu {
+                    margin-left: 100%;
+                } 
+            }
+            &.aligned-center {
+                .dropdown-menu  {
+                    left:50%;
+                    transform: translate(-50%);
+                }                
+                .dropdown-submenu .dropdown-menu {
+                    margin-left: 100%;
+                }               
+            }
+        }
+        
+    }
+    .w-product {
+        width: 100%;
+    }
+    .widget-images {
+        margin-bottom: 20px;
+    }
+    .product-block {
+        overflow: hidden;
+    	.wishlist, .product-zoom, .compare, .quickview,.cart,.img-overlay,.description {
+    		display: none;
+    	}        
+        .image {
+            border: none;
+            text-align: left;
+            float: left;
+            margin:0 20px;
+        }
+        .product-meta {
+            padding: 0;
+            text-align: left;
+        }
+        .name {
+            margin-bottom: 0;
+        }
+        &:hover {
+            .name {
+                font-size: @font-size-base;
+                a {
+                    color: @theme-color-secondary;
+                }
+            }
+        }
+    }
+	.mega-group {
+		.caret{
+			display: none;
+		}
+		& > .dropdown-toggle {
+			display: block;
+			font-weight: bold;
+			padding: 6px 5px;
+			text-transform: uppercase;
+			border-bottom: solid 1px #E5E5E5 
+		}
+		
+		.dropdown-mega { 
+			 .mega-col-inner {
+				& > ul > li  {
+					a {
+						margin-left: 6px; 
+					}	
+				}
+			}
+		}
+	}
+	.mega-col {
+		  .mega-col-inner{
+			& > ul{
+				  list-style: none outside none;
+				  margin: 0;
+				  padding: 0;
+				  & > li {
+				  		list-style: none;
+				  		margin-left: 0;
+                        position: relative;
+				  		& > a {
+							clear: both;
+							display: block;
+							line-height: 20px;
+
+				  		}
+				  }
+			}
+		}
+	}
+ 
+
+	.dropdown-submenu {
+		&:hover{
+			.dropdown-menu{
+				display: block;
+			}
+		}
+		& > .dropdown-menu {
+		    border-radius: 0 6px 6px 6px;
+		    left: 100%;
+		    margin-left: -6px;
+		    margin-top: -6px;
+		    top: 0;
+		}
+	}
+	.cols2{ width: 420px; }
+	.cols3{ width: 620px; }
+	.cols4{ width: 820px; }
+}
+.pavo-widget{
+    .menu-title{
+        font-size: 16px;
+    }
+    li{
+        a{
+            line-height: 35px !important;
+            background-position: 5px -1px !important;
+            &:hover{
+              background-position: 5px -25px !important
+            }
+        }
+    }
+}
