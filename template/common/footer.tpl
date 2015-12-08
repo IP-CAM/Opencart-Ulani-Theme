@@ -72,19 +72,11 @@
   <div class="container">
     <div class="inner">
       <div class="copyright pull-left">
-        <?php if( $helper->getConfig('enable_custom_copyright', 0) ) { ?>
-          <?php echo $helper->getConfig('copyright'); ?>
-        <?php } else { ?>
-          <?php echo $powered; ?>. 
-        <?php } ?>
-    Designed by <a href="http://www.pavothemes.com/" title="Pavothemes - opencart themes clubs">Pavothemes</a>
+        
+     Powered by <a href="http://opencart.com/">OpenCart</a> <br/>Original Themes by <a href="http://www.pavothemes.com/" title="Pavothemes - opencart themes clubs">Pavothemes</a> <br/>Modified by <a href="http://kovloq.com">Dana</a>
       </div>  
 
-      <?php if( $content=$helper->getLangConfig('widget_paypal') ) {?>
-        <div class="paypal pull-right">
-          <?php echo $content; ?>
-        </div>
-      <?php } ?>
+      
       </div>
   </div>
 </div>
