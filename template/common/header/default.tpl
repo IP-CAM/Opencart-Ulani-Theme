@@ -32,12 +32,12 @@
   				</ul>
   			</div>
   			<div class="col-md-4 col-sm-4 col-xs-6 header-left">
-  				<div class="currency pull-right">
+  				<!-- <div class="currency pull-right">
 					<?php echo $currency; ?>
 				</div>
   				<div class="language pull-right">
 					<?php echo $language; ?>
-				</div>								  				
+				</div>		-->						  				
 			</div>
 	    </div>
   	</div><!-- end container -->
