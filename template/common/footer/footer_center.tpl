@@ -4,13 +4,14 @@
   <div class="container"><div class="inner">
     <div class="row"> 
       <div class="column col-md-3 col-sm-6 col-xs-12">
-        <?php
-          if($content=$helper->getLangConfig('widget_shopmap')){
-            echo $content;
-          }
-        ?>
+        <div class="box">
+            <div class="box-heading"><span>Shop Map</span></div>
+            <div class="content">
+              <a href="http://ulanifashion.com/index.php?route=information/information&information_id=4"><img class="img-responsive" src="image/catalog/map.png" alt="Map"></a>
+            </div>
+          </div>
       </div> 
-      <div class="column col-md-2 col-sm-6 col-xs-12">
+      <div class="column col-md-3 col-sm-6 col-xs-12">
         <div class="box">
           <div class="box-heading"><span><?php echo $text_information; ?></span></div>
           <ul class="list">
@@ -20,7 +21,7 @@
           </ul>
         </div>        
       </div>   
-      <div class="column col-md-2 col-sm-6 col-xs-12">
+      <div class="column col-md-3 col-sm-6 col-xs-12">
         <div class="box">
           <div class="box-heading"><span><?php echo $text_account; ?></span></div>
           <ul class="list">
@@ -31,7 +32,7 @@
           </ul>
         </div>
       </div>
-      <div class="column col-md-2 col-sm-6 col-xs-12">
+      <!--<div class="column col-md-2 col-sm-6 col-xs-12">
         <div class="box">
           <div class="box-heading"><span><?php echo $text_extra; ?></span></div>
           <ul class="list">
@@ -41,7 +42,7 @@
             <li><a href="<?php echo $special; ?>"><i class="fa fa-arrow-right"></i><?php echo $text_special; ?></a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <div class="column col-md-3 col-sm-6 col-xs-12">
         <div class="box">
           <div class="box-heading"><span><?php echo $text_service; ?></span></div>
@@ -49,7 +50,7 @@
             <li><a href="<?php echo $contact; ?>"><i class="fa fa-arrow-right"></i><?php echo $text_contact; ?></a></li>
             <li><a href="<?php echo $return; ?>"><i class="fa fa-arrow-right"></i><?php echo $text_return; ?></a></li>
             <li><a href="<?php echo $sitemap; ?>"><i class="fa fa-arrow-right"></i><?php echo $text_sitemap; ?></a></li>
-            <li><a href="<?php echo $voucher; ?>"><i class="fa fa-arrow-right"></i><?php echo $text_voucher; ?></a></li>
+           
           </ul>
         </div>
       </div>      
